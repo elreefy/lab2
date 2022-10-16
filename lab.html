@@ -1,11 +1,12 @@
 //form field with validation if the name is empty display an alert that says “please
-// enter your name”. else Go Navigate to another page
+// enter 
+//your name”. else Go Navigate to another page
 <html>
 <head>
 <title>Lab 1</title>
 </head>
 <body>
-<form name="myForm" action="welcome.php" onsubmit="return validateForm()" method="post">
+<form name="myForm" action="submit.php" onsubmit="return validateForm()" method="post">
 Name: <input type="text" name="fname">
 <input type="submit" value="Submit">
 </form>
@@ -15,10 +16,6 @@ var x = document.forms["myForm"]["fname"].value;
 if (x == "") {
 alert("Name must be filled out");
 return false;
-}
-else{
-//navigate to welcome.html
-window.location.href = "welcome.html";
 }
 }
 </script>
